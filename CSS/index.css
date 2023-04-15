@@ -101,6 +101,10 @@ td {
     background-color: black;
     font-family: 'Inconsolata', monospace;
 }
+.panel:hover {
+    cursor: pointer;
+}
+
 .pantalla{
     background-color: black;
     color: rgb(3, 173, 195);
@@ -121,9 +125,7 @@ td {
     font-family: 'Inconsolata', monospace;
 }
 
-.paneles{
-    background-color: #000000;
-}
+
 .logo{
     background-color: black;
     color: rgb(3, 173, 195);
@@ -146,4 +148,53 @@ td {
     vertical-align: top;
     padding: 10px;
     border: 1px solid black;
+}
+
+.salidaProd {
+    padding: 10px;
+    font-size: 24px;
+    width: 120px;
+    height: 17px;
+    position: relative;
+    top: 580px;
+    left: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.salidaProd_franja {
+    width: 120px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    right: 10px;
+    align-items: center;
+}
+
+.circulo {
+    width: 33px;
+    height: 33px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    top: 535px;
+    
+    left: 170px;
+    margin: 10px;
+}
+
+.circulo_franja {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 49%;
+    right: 1px;
+    left: 7px;
+    transform: rotate(90deg);
+    transform-origin: center;
 }
