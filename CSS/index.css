@@ -84,7 +84,7 @@ td {
 }
 
 .paneles{
-    background-color: #cfcfcf;
+    background-color: #000000;
 }
 .logo{
     background-color: black;
@@ -97,8 +97,6 @@ td {
     position: absolute;
     top: 10%;
     right: 25px;
-    justify-content:left ;
-    align-items:start;
     flex-direction: column;
     font-size: 20px;
     border-radius: 5px;
@@ -110,12 +108,3 @@ td {
     padding: 10px;
     border: 1px solid black;
 }
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-button {
-    margin-top: 10px;
-}
-
