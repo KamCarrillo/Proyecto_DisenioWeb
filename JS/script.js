@@ -1,5 +1,7 @@
 const numeros = [];
-const data = ['01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24'];
+const data = [
+'01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24'];
+
 const price =[20.0,34.5,20.5];
 
 const panel = document.querySelector('.panel');
@@ -29,16 +31,19 @@ function imprimirHTML(numeros) {
         p1=String(numeros[0])
         p2=String(numeros[1])
         code=p1+p2
+        
         for(i=0;i<6;i++){
             if(code==data[i]){
                 html += `${price[0]} `;
             }
         };
+        
         for(i=6;i<12;i++){
             if(code==data[i]){
                 html += `${price[1]} `;
             }
         };
+
         for(i=12;i<24;i++){
             if(code==data[i]){
                 html += `${price[2]} `;
@@ -53,4 +58,3 @@ function imprimirHTML(numeros) {
         pantalla.innerHTML = html;
     }
 }
-
