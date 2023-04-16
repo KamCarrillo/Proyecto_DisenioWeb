@@ -1,29 +1,33 @@
-.maquina{
+.maquina_contenedor {
     display: grid;
     grid-template-columns: 66.6% 33.3%;
     width: 900px;
-    height:1000px;
+    height: 1000px;
     background-color: #494949;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    position:relative;
-    padding:30px;
+    box-shadow: 10px 0px 3px rgba(0, 0, 0, 10);
+    position: relative;
+    padding: 30px;
     margin: 0 auto;
+    border-radius: 15px;
 }
 
-
-
-.sticker{
-    margin-left: 1rem;
-    width: 5rem;
+.sticker {
+    width:1.67rem;
+    height: 1rem;
     background-color: #e2e2e2;
+    border-radius: 5px;
+    display: flex;
 }
 
-.vidrio{
+.sticker-precio{
+    background-color: rgb(39, 39, 120);
+}
+.vidrio {
     background-color: rgb(150, 135, 108);
     margin-bottom: 7rem;
 }
 
-.almacen{
+.almacen {
     margin-left: 1.5rem;
     margin-top: 9rem;
     display: grid;
@@ -32,11 +36,13 @@
 
 .producto {
     display: grid;
+    margin: 0;
+    padding: 0;
     column-gap: 0rem;
-    grid-template-columns:16cm;
-    grid-template-rows:7rem;
-    column-gap:0rem;
-    row-gap: 3rem;
+    grid-template-columns: 16cm;
+    grid-template-rows: 7rem;
+    column-gap: 0rem;
+    row-gap: 0rem;
     justify-content: center;
 }
 
@@ -45,13 +51,14 @@
     padding: 0;
 }
 
-.producto-img{
+.producto-img {
     width: 70%;
     margin: 0 auto;
 }
+
 table {
     border-collapse: collapse;
-    border-spacing: 1px;
+    border-spacing: 0px;
 }
 
 td {
@@ -61,21 +68,19 @@ td {
     width: 150px;
     height: 200px;
     vertical-align: middle;
-    
 }
 
-.plate{
+.plate {
     background-color: #858585;
     margin-left: 4rem;
     margin-bottom: 17rem;
 }
 
-
 .panel {
     background-color: black;
     border: 1px solid black;
     border-radius: 5px;
-    width: 175px; 
+    width: 175px;
     height: 250px;
     font-size: 24px;
     text-align: center;
@@ -90,6 +95,7 @@ td {
     justify-content: flex-end;
     margin-right: 1.5rem;
 }
+
 .panel div {
     border: 3px solid rgb(3, 173, 195);
     border-radius: 50%;
@@ -101,11 +107,12 @@ td {
     background-color: black;
     font-family: 'Inconsolata', monospace;
 }
+
 .panel:hover {
     cursor: pointer;
 }
 
-.pantalla{
+.pantalla {
     background-color: black;
     color: rgb(3, 173, 195);
     padding: 10px;
@@ -116,8 +123,8 @@ td {
     position: absolute;
     top: 20%;
     right: 25px;
-    justify-content:left ;
-    align-items:start;
+    justify-content: left;
+    align-items: start;
     flex-direction: column;
     font-size: 20px;
     border-radius: 5px;
@@ -126,7 +133,7 @@ td {
 }
 
 
-.logo{
+.logo {
     background-color: black;
     color: rgb(3, 173, 195);
     padding: 10px;
@@ -142,7 +149,8 @@ td {
     border-radius: 5px;
     margin-right: 1.5rem;
 }
-.texto{
+
+.texto {
     width: 45%;
     display: inline-block;
     vertical-align: top;
@@ -182,7 +190,7 @@ td {
     border-radius: 50%;
     position: relative;
     top: 535px;
-    
+
     left: 170px;
     margin: 10px;
 }
@@ -197,4 +205,27 @@ td {
     left: 7px;
     transform: rotate(90deg);
     transform-origin: center;
+}
+
+.patita_izq {
+    height: 75px;
+    width: 75px;
+    top: 1067px;
+    left: 600px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #494949;
+    box-shadow: 10px 0px 3px rgba(0, 0, 0, 10);
+}
+
+
+.patita_der {
+    height: 75px;
+    width: 75px;
+    top: 1067px;
+    left: 1150px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #494949;
+    box-shadow: 10px 0px 3px rgba(0, 0, 0, 10);
 }
