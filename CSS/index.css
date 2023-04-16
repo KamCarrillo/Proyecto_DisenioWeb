@@ -106,10 +106,15 @@ td {
     color: rgb(3, 173, 195);
     background-color: black;
     font-family: 'Inconsolata', monospace;
+    font-weight: bold;
 }
 
-.panel:hover {
+.panel div:hover{
+    border: 3px solid rgb(3, 173, 195);
+    color: rgb(0, 0, 0);
+    background-color:rgb(3, 173, 195);
     cursor: pointer;
+
 }
 
 .pantalla {
