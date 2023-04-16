@@ -1,3 +1,4 @@
+/*Login*/
 body {
     background-color: #b3bddf;
   }
@@ -5,6 +6,10 @@ body {
   h1 {
       font-size: 30px;
       
+  }
+  .iniciar_sesion{
+      color: white;
+      text-decoration: none;
   }
   .login-form {
     margin: 250px auto;
@@ -45,3 +50,159 @@ body {
     font-size: 16px;
     font-weight: 600;
   }
+
+  .title{
+    margin: auto;
+    text-align: center;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 10px;
+    width: 30rem;
+    height: 5rem;
+    padding: 15px;
+    font-size: 30px;
+}
+
+/*Menu principal*/
+@media (min-width: 728px){
+    .navegacion_principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+.nav_bg{
+    background-color: #A0AEE1 ;
+    height: 5rem;
+    padding: 0px 30px;
+    
+    
+}
+
+.navegacion_principal{
+
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px;
+    
+
+}
+
+.navegacion_principal a{
+    color: white;
+    background-color: #A9BCFB;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size:15px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.navegacion_principal a:hover{
+   
+    color: #A0AEE1;
+    cursor: pointer;
+}
+.ventas{
+    padding: 4rem;
+    height: 10rem;
+}
+.ventas div{
+   background-color: white;
+   width: 168px;
+   height: 37px; 
+   border-radius: 10px;
+   text-align: center;
+   padding: 6px;
+   font-weight: 700;
+   
+}
+
+.ventas a{
+    background-color: #A0AEE1 ;
+    border-radius: 10px;
+    padding: 10px 50px;
+    color: white;
+    font-weight: 700px;
+}
+.ventas a:hover{
+   
+   color: #818ebd;
+   cursor: pointer;
+   text-decoration: none;
+}
+.testo{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    width: 90%;
+    height: 20rem;
+    resize: none;
+
+}
+/*Agregar productos*/
+.titulo{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    padding: 12px;
+    left: 54px;
+    top: 70px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    }
+    .formulario{
+
+    width: 90rem;
+    top: 40px;
+    margin: 0 auto;
+    padding: 50px;
+    
+    
+}
+.field{
+    border-radius: 10px;
+    border: none;
+    text-align: none;
+    padding: 0px 10px;
+    height: 50px;
+    width: 35rem;
+}
+
+.boton{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 10rem;
+}
+
+.boton:hover{
+    cursor:pointer;
+    background-color: #A0AEE1;
+}
+
+.exit-bar{
+    background-color: #A0AEE1;
+    height: 35px;
+    padding: 4px 50px; 
+}
+
+.exit-bar a{
+    background-color: #A9BCFB;
+    padding: 3px 50px 7px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.exit-bar a:hover{
+    cursor:pointer;
+    background-color: #96a3d3; 
+}
