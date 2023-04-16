@@ -14,6 +14,7 @@ panel.addEventListener('click', event => {
         imprimirHTML(numeros)
     } else if (value === 'C') {
         numeros.length = 0;
+        imprimirHTML(numeros)
     }
 });
 
@@ -21,7 +22,6 @@ function imprimirHTML(numeros) {
     const pantalla = document.querySelector('.pantalla');
     if(numeros.length>1){
         let html = 'Producto: A ';
-        // numeros.forEach(numero => {
         for(i=0;i<2;i++){
             html += `${numeros[i]} `;
         };
