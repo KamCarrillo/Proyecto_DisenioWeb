@@ -2,6 +2,21 @@
 <html lang="es">
 
 <head>
+  <script>
+    adminUser='admin'
+    adminPass='admin'
+    
+    function tryLogIn(){
+      usr=document.getElementById('username').value
+      pass=document.getElementById('password').value
+      if (adminUser==usr&&adminPass==pass){
+        location.replace("./Administrador.html")
+        return
+      }
+    }
+  </script>
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iniciar sesión</title>
@@ -21,15 +36,13 @@
           <div class="form-group">
             
             <label for="username">Nombre de usuario</label>
-            <input type="text" id="username" name="username" required >
+            <input type="text" id="username" name="username" required>
           </div>
           <div class="form-group">
             <label for="password">Contraseña</label>
             <input type="password" id="password" name="password" required>
           </div>
-          
-          <a class="btn btn-primary" href="./Administrador.html" role="button">Iniciar sesion</a>
-          
+          <button onclick="tryLogIn()" type="button" class="btn btn-primary">Iniciar sesión</button>
         </form>
       </div>
     </div>
