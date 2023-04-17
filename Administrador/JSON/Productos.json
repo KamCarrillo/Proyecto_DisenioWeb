@@ -1,0 +1,58 @@
+[
+    {
+        "nombre": "SABRITAS",
+        "tipo": "PAPAS",
+        "codigo": "131233",
+        "precio": "10",
+        "cantidad": "10"
+    },
+    {
+        "nombre": "CHIPS",
+        "tipo": "PAPAS",
+        "codigo": "123213",
+        "precio": "10",
+        "cantidad": "6"
+    },
+    {
+        "nombre": "TAKIS",
+        "tipo": "PAPAS",
+        "codigo": "324234",
+        "precio": "10",
+        "cantidad": "30"
+    },
+    {
+        "nombre": "RUFFLES",
+        "tipo": "PAPAS",
+        "codigo": "234234",
+        "precio": "10",
+        "cantidad": "20"
+    },
+    {
+        "nombre": "COCA",
+        "tipo": "REFRESCO",
+        "codigo": "234934",
+        "precio": "15",
+        "cantidad": "23"
+    },
+    {
+        "nombre": "PEPSI",
+        "tipo": "REFRESCO",
+        "codigo": "434234",
+        "precio": "15",
+        "cantidad": "20"
+    },
+    {
+        "nombre": "SKITTLES",
+        "tipo": "DULCE",
+        "codigo": "287234",
+        "precio": "18",
+        "cantidad": "14"
+    },
+    {
+        "nombre": "EMINEMS",
+        "tipo": "DULCE",
+        "codigo": "230234",
+        "precio": "18",
+        "cantidad": "21"
+    }
+]
