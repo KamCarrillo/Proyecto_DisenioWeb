@@ -158,6 +158,7 @@ td {
     border-radius: 5px;
     margin-right: 1.5rem;
     font-family: 'Inconsolata', monospace;
+    font-family: 'Orbitron', sans-serif;
 }
 
 
@@ -225,35 +226,27 @@ td {
 
 .circulo_franja {
     width: 20px;
-    height: 2px;
+    height: 5px;
     background-color: white;
     position: absolute;
-    top: 49%;
-    right: 1px;
+    top: 60%;
+    right:20px;
     left: 7px;
-    transform: rotate(90deg);
-    transform-origin: center;
 }
 
-.patita_izq {
-    height: 75px;
-    width: 75px;
-    top: 1078px;
-    left: 400px;
-    position: absolute;
-    border-radius: 5px;
-    background-color: #494949;
-    box-shadow: 10px 0px 3px rgba(0, 0, 0, 10);
+.RetLogin {
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #28415c;
+    border: 5px solid #28415c;
+    border-radius: 4px;
 }
 
+.RetLogin:hover {
+    background-color: #0062cc;
 
-.patita_der {
-    height: 75px;
-    width: 75px;
-    top: 1078px;
-    left: 1150px;
-    position: absolute;
-    border-radius: 5px;
-    background-color: #494949;
-    box-shadow: 10px 0px 3px rgba(0, 0, 0, 10);
 }
