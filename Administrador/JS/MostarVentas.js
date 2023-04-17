@@ -58,10 +58,22 @@ window.onload = function () {
         let producto = fila.insertCell(1);
         let cantidad = fila.insertCell(2);
         let precio = fila.insertCell(3);
+        let acciones = fila.insertCell(4);
 
         num.innerHTML = i + 1;
         producto.innerHTML = ventas[i].producto;
         cantidad.innerHTML = ventas[i].cantidad;
         precio.innerHTML = ventas[i].precio;
+        acciones.innerHTML = '<button class="eliminar">Eliminar</button>';
     }
+    tabla.addEventListener("click", function (e) {
+        if (e.target.classList.contains("eliminar")) {
+            let id = e.target.getAttribute("data-id");
+            ventas.splice(id, 1);
+            tabla.deleteRow(id);
+            for (let i = 0; i < tabla.rows.length; i++) {
+                tabla.rows[i].cells[0].innerHTML = i + 1;
+            }
+        }
+    });
 }

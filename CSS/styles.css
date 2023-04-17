@@ -207,3 +207,36 @@ body {
     cursor:pointer;
     background-color: #96a3d3; 
 }
+
+.recuadro {
+    background: linear-gradient(to bottom right, #f2f2f2, #d9d9d9);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    position: relative;
+    color: #333;
+    left: 500px;
+  }
+  
+  .recuadro h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .recuadro p {
+    margin: 0;
+  }
+  
+  .recuadro strong {
+    font-weight: bold;
+  }
