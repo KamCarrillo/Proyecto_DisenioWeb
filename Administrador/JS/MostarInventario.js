@@ -1,14 +1,3 @@
-function obtenerDatosJSON(ruta) {
-    return fetch(ruta)
-        .then(response => response.json())
-        .then(data => {
-            return data;
-        })
-        .catch(error => {
-            console.error('Error al obtener los datos del archivo JSON:', error);
-        });
-}
-
 window.onload = function () {
     const productos =[
         {
