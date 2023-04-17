@@ -79,7 +79,6 @@ window.onload = function () {
         codigo.innerHTML = productos[i].codigo;
         precio.innerHTML = "$" + productos[i].precio;
         cantidad.innerHTML = (50 / (i + 5) - 1).toFixed(0);
-
         acciones.innerHTML = '<button class="eliminar">Eliminar</button>';
     }
     tabla.addEventListener("click", function (e) {
@@ -92,4 +91,4 @@ window.onload = function () {
             }
         }
     });
-
+}
