@@ -1,13 +1,3 @@
-function obtenerDatosJSON(ruta) {
-    return fetch(ruta)
-        .then(response => response.json())
-        .then(data => {
-            return data;
-        })
-        .catch(error => {
-            console.error('Error al obtener los datos del archivo JSON:', error);
-        });
-}
 
 window.onload = function () {
     const productos =[
@@ -80,6 +70,8 @@ window.onload = function () {
         let precio = fila.insertCell(4);
         let cantidad = fila.insertCell(5);
 
+        let acciones = fila.insertCell(6);
+
 
         num.innerHTML = i + 1;
         nombre.innerHTML = productos[i].nombre;
@@ -87,5 +79,17 @@ window.onload = function () {
         codigo.innerHTML = productos[i].codigo;
         precio.innerHTML = "$" + productos[i].precio;
         cantidad.innerHTML = (50 / (i + 5) - 1).toFixed(0);
+
+        acciones.innerHTML = '<button class="eliminar">Eliminar</button>';
     }
-}
+    tabla.addEventListener("click", function (e) {
+        if (e.target.classList.contains("eliminar")) {
+            let id = e.target.getAttribute("data-id");
+            productos.splice(id, 1);
+            tabla.deleteRow(id);
+            for (let i = 0; i < tabla.rows.length; i++) {
+                tabla.rows[i].cells[0].innerHTML = i + 1;
+            }
+        }
+    });
+
