@@ -233,6 +233,7 @@ td {
     right:20px;
     left: 7px;
 }
+
 .RetLogin {
     display: block;
     font-size: 50px;
@@ -247,4 +248,5 @@ td {
 
 .RetLogin:hover {
     background-color: #0062cc;
+
 }
